@@ -12,8 +12,9 @@ fn main() {
     change(&mut s);
 
     {
-        // more that 1 mutable reference to the same variable will fail to compile
         let mut_x = &mut s;
+        
+        // more that 1 mutable reference to the same variable will fail to compile
         // let mut_y = &mut s;
     }
 
